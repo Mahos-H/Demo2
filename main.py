@@ -393,19 +393,7 @@ def install_uv_and_run_script(script_url, user_email):
 
     if uv_check:
         logger.info(f"uv is already installed")
-        # uv_check = subprocess.run(["uv", "--version"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-    # logger.info(f"uv_check {uv_check}")
-    # # Step 1: Check if `uv` is installed
-    # try:
-    #     logger.info(f"Before subprocess.run uv --version")
-    #     subprocess.run(["uv", "--version"], check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    #     logger.info(f"After subprocess.run uv --version")
-    #     uv_installed = True
-    # except subprocess.CalledProcessError as e:
-    #     logger.info(f"uv is not installed {str(e)}")
-    #     pass
-    # #    uv_installed = False
 
     
     # Step 2: Install `uv` if not installed
